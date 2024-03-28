@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu Te Amo Muito!</title>
+
+<style>
+    body{
+        background-color: rgb(182, 0, 0);
+    }
+    .painel{
+        margin: auto;
+        background-color: white;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #sim{
+        height: 60px;
+        width: 130px;
+        background-color: rgb(219, 0, 0);
+        border: 2px solid white;
+        border-radius: 10px;
+        color: aliceblue;
+        margin-left: -145px;
+
+
+    }
+    #nao{
+        position: absolute;
+        height: 60px;
+        width: 130px;
+        background-color: rgb(219, 0, 0);
+        border: 2px solid white;
+        border-radius: 10px;
+        color: aliceblue;
+        margin-left: 10px;
+    }
+
+</style>
+
+</head>
+<body>
+    
+    <div class="painel">
+        <h2> EU TE AMO MUITO MINHA VIDA! </h2>
+
+        <img src="https://i.pinimg.com/originals/a9/7a/91/a97a91d9322cb2c983a1996d593dd2eb.gif" width="230" alt="">
+
+        <h4> EXEMPLO: "PS: (MEU DRAMA) por mais que fica me esquecendo quando está longe, esquece de me responder, 
+            fica sendo fria e seca comigo e responde à todo mundo menos EU."
+        </h4>
+        <h5> EXEMPLO:Pode Me Beliscar, Mas Me Desculpe Por Te Irritar? Kkkkkk </h5>
+
+        <a href="https://youtu.be/l4DAcyXkX0E?t=43"><button id="sim" onclick="boa()"> SIM AMOR, EU TE DESCULPO, EU TE AMO MUITO! </button></a>
+        <button onmouseover="fuja()" id="nao"> NÃO!  ESTOU BRAVA, IRRITADA E CHATEADA! </button>
+
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+
+        function boa(){
+            alert("Frase de sei interesse...");
+            alert("Frase de seu interesse...");
+            alert("FRASE DE SEU INTERESSE...");
+            alert("FRASE DE SEU INTERESSE...");
+
+        }
+    </script>
+
+
+
+
+</body>
+</html>
